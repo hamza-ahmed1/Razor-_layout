@@ -6,7 +6,7 @@ var app = builder.Build();
 app.MapDefaultControllerRoute();
 
 app.Run();
-#region MyRegion
+#region Summary
 /*
  * Using a Layout Page
 In the previous section, you saw that including the same content in many web pages is easy.
@@ -34,5 +34,14 @@ _header.cshtml
 _footer.cshtml
 
 _Layout.cshtml
+ */
+#endregion
+
+#region Task can be done
+/*
+ * if we have multiple layout view i-e layout1 and layout2 and we want specific view to specific action we have to do just 
+ * specifie layout property in that action so priority will be given to that layout
+ * if we don't want to apply layout on specific avtion then we just have to set layout=null
+ * we can select layout conditionally in view start file(i-e admin or student)
  */
 #endregion
